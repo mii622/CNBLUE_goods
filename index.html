@@ -58,15 +58,15 @@ body{
 }
 
 /* グリッド */
-  .grid{
+.grid{
   display:grid;
+  grid-template-columns:1fr; /* 明示しとくと安定 */
   max-width:600px;
   margin:0 auto;
   padding:20px;
   gap:16px;
-  }
+}
 
-;
 /* カード */
 .card{
   background:rgba(255,255,255,0.92);
