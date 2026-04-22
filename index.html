@@ -6,7 +6,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
 
-<title>GOODS CALCULATOR</title>
+<title>CNBLUE グッズ計算</title>
 
 <style>
 body{
@@ -40,10 +40,11 @@ body{
 /* グリッド */
 .grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr;
   gap:12px;
   padding:15px;
-  padding-bottom:80px;
+  max-width:600px;
+  margin:0 auto;
 }
 
 /* カード */
@@ -63,8 +64,9 @@ body{
 /* 画像 */
 .card img{
   width:100%;
-  aspect-ratio: 16/9;
+  height:140px;
   object-fit:cover;
+  bordaer-radius:0;
 }
 
 /* テキスト */
@@ -110,7 +112,7 @@ body{
 <body>
 
 <div class="header">
-  <div class="title">GOODS CALCULATOR</div>
+  <div class="title">CNBLUE </div>
   <div class="sub">ツアーを選択</div>
 </div>
 
@@ -140,7 +142,7 @@ body{
   </a>
 
   <a href="https://mii622.github.io/2025XMAS/" class="card">
-    <img src="Images/IMG_2025XMAS.jpg">
+    <img src="Images/IMG_2025XMAS.JPG">
     <div class="card-body">
       <div class="card-title">2025 XMAS</div>
     </div>
