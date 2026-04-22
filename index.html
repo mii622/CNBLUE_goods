@@ -1,9 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet">
+
+<title>GOODS CALCULATOR</title>
+
+<style>
+body{
+  font-family:"BIZ UDGothic",sans-serif;
+  background:#0c0a09;
+  color:#fff;
+  margin:0;
+}
+
+/* ヘッダー */
+.header{
+  position:sticky;
+  top:0;
+  background:#0c0a09;
+  padding:15px 10px 10px;
+  text-align:center;
+  z-index:10;
+  border-bottom:1px solid #222;
+}
+
+.title{
+  font-size:1.3rem;
+  color:#e97520;
+}
+
+.sub{
+  font-size:0.8rem;
+  opacity:0.6;
+}
+
+/* グリッド */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  padding:15px;
+  padding-bottom:80px;
+}
+
+/* カード */
+.card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  text-decoration:none;
+  color:#000;
+  transition:0.15s;
+}
+
+.card:active{
+  transform:scale(0.97);
+}
+
+/* 画像 */
+.card img{
+  width:100%;
+  aspect-ratio: 16/9;
+  object-fit:cover;
+}
+
+/* テキスト */
+.card-body{
+  padding:10px;
+}
+
+.card-title{
+  font-size:0.9rem;
+  font-weight:bold;
+}
+
+.new{
+  color:#e97520;
+  font-size:0.7rem;
+  margin-left:5px;
+}
+
+/* フッター固定ボタン */
+.bottom-bar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#111;
+  padding:10px;
+  text-align:center;
+  border-top:1px solid #333;
+}
+
+.home-btn{
+  display:inline-block;
+  background:#e97520;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="title">GOODS CALCULATOR</div>
+  <div class="sub">ツアーを選択</div>
+</div>
+
+<div class="grid">
 <div class="section-title">LATEST</div>
 
 <div class="grid">
   <!-- 最新 -->
   <a href="https://mii622.github.io/3LOGY/" class="card">
-    <img src="IMG_3LOGY.JPG">
+    <img src="Images/IMG_3LOGY.JPG">
     <div class="card-body">
       <div class="card-title">
         2026 3LOGY <span class="new">NEW</span>
@@ -16,44 +133,47 @@
 
 <div class="grid">
   <a href="https://mii622.github.io/OneLastDay/" class="card">
-    <img src="IMG_onelastday.JPG">
+    <img src="Images/IMG_onelastday.JPG">
     <div class="card-body">
       <div class="card-title">2026 One Last Day</div>
     </div>
   </a>
 
   <a href="https://mii622.github.io/2025XMAS/" class="card">
-    <img src="IMG_2025XMAS.jpg">
+    <img src="Images/IMG_2025XMAS.jpg">
     <div class="card-body">
       <div class="card-title">2025 XMAS</div>
     </div>
   </a>
 
  <a href="https://mii622.github.io/2025kingdom/" class="card">
-    <img src="IMG_2025kingdom.JPG">
+    <img src="Images/IMG_2025kingdom.JPG">
     <div class="card-body">
       <div class="card-title">2025 KINGDOM</div>
     </div>
   </a>
   
   <a href="https://mii622.github.io/SHINTOUYA/" class="card">
-    <img src="IMG_shintouya.JPG">
+    <img src="Images/IMG_shintouya.JPG">
     <div class="card-body">
       <div class="card-title">2025 SHINTOUYA</div>
     </div>
   </a>
 
   <a href="https://mii622.github.io/Ofd622jyh/" class="card">
-    <img src="IMG_ourfinedays.JPG">
+    <img src="Images/IMG_ourfinedays.JPG">
     <div class="card-body">
       <div class="card-title">2025 Our Fine Days</div>
     </div>
   </a>
+</div> 
+
+<div class="bottom-bar">
+  <a href="#" class="home-btn">TOP</a>
 </div>
 
-.section-title{
-  color:#e97520;
-  font-size:0.9rem;
-  margin:15px 15px 5px;
-}
+</body>
+</html>
+
+
 
