@@ -29,18 +29,32 @@ body{
   text-align:center;
   z-index:10;
   background:rgba(255,255,255,0.08);
-  backdrop-filter:blur(16px);
-  border-bottom:none;
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,0.15);
+  border-bottom-left-radius:18px;
+  border-bottom-right-radius:18px;
 }
 
+.header::after{
+  content:"";
+  display:block;
+  width:30px;
+  height:3px;
+  background:rgba(255,255,255,0.5);
+  border-radius:10px;
+  margin:12px auto 0;
+}
+  
 .title{
-  font-size:1.5rem;
+  font-size:1.4rem;
   color:#ffffff;
+  letter-spacing:1.2px;
 }
 
 .sub{
-  font-size:1.0rem;
-  opacity:0.7;
+  font-size:0.85rem;
+  opacity:0.6;
+  margin-top:6px;
 }
 
 /* グリッド */
